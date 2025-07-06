@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*CSS reset code*/
+@font-face {
+  font-family: Outfit-variable;
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Young-serif;
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+/*Fonts that I used in this exercise*/
+body{
+    width: 1440px;
+    font-size: 1rem;
+    background-color:  hsl(30, 54%, 90%);
+    font-family: Outfit-variable;
+}
+/*Maximum width,default font size,background color of web page,and default font family for text on this web page*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Simple aligning in web page,we havent used flex or grid,because we dont have to many containers,we hade only one*/
+.content{
+   background-color: hsl(330, 100%, 98%);
+   margin-top: 60px;
+   margin-bottom: 30px;
+   height: 1770px;
+   width: 830px;
+   border-radius: 10px;
+   padding: 40px;
+}
+/*Sizes for building this container on our web page*/
+.header-image{
+  margin-bottom: 30px;
+}
+.header-image img{
+  border-radius: 10px;
+}
+/*Image code*/
+.header .header-txt{
+    font-size: 50px;
+    font-family: Young-serif;
+    margin-bottom: 20px;
+    color: hsl(24, 5%, 18%);
+}
+/*Code for header*/
+.header-subtext {
+  margin-bottom: 30px;
+}
+.header-subtext .txt-1{
+  font-size: 18px;
+  color: hsl(30, 10%, 34%);
+}
+/*Subtext of our header and its code*/
+.list-1 {
+  padding-left: 20px; 
+}
+.preparation{
+  height: 180px;
+  width: 750px;
+  background-color: hsl(30, 54%, 90%);
+  padding: 30px;
+  border-radius: 5px;
+}
+.preparation-header{
+  font-size: 20px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.list-1 li{
+  padding-left: 22px;
+}
+.total{
+  color: hsl(24, 5%, 18%);
+  font-weight: 600;
+}
+.txt-2 {
+  margin-left: 2px;
+  color: hsl(30, 10%, 34%);
+}
+.prp {
+  color: hsl(24, 5%, 18%);
+  font-weight: 600;
+}
+.txt-3 {
+  margin-left: 3px;
+  color: hsl(30, 10%, 34%);
+}
+.ckg {
+  color: hsl(24, 5%, 18%);
+  font-weight: 600;
+}
+.txt-4 {
+  margin-left: 3px;
+  color: hsl(30, 10%, 34%);
+}
+/*Code for preparation div*/
+.ingredients{
+  margin-top: 26px;
+  margin-bottom: 30px;
+}
+.ingredients-header{
+  color: hsl(14, 45%, 36%);
+  font-family: Young-serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+.list-2 {
+  padding-left: 26px;
+}
+.list-2 li{
+  padding-left: 23px;
+}
+.txt-5{
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+hr{
+  color: hsl(30, 18%, 87%);
+  background-color: hsl(30, 18%, 87%);
+  height: 1px;
+  border: none;
+}
+::marker{
+  color: hsl(332, 51%, 32%);
+}
+.list-2  ::marker{
+  color:  hsl(14, 45%, 36%);
+}
+/*Code for ingredients div*/
+.instructions{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.instructions-header{
+  color:  hsl(14, 45%, 36%);
+  font-family: Young-serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 22px;
+}
+.ordered-list ::marker{
+  color:  hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+.txt-6{
+  color: hsl(24, 5%, 18%);
+  font-weight: 600;
+  font-size: 17px;
+}
+.ordered-list{
+  padding-left: 24px;
+}
+.ordered-list li{
+  padding-left: 23px;
+}
+.txt-7{
+  margin-left: 4px;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+/*Code for instructions div*/
+.nutrition{
+  margin-top: 40px;
+}
+.nutrition-header{
+  color:  hsl(14, 45%, 36%);
+  font-family: Young-serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 16px;
+}
+.txt-8{
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.txt-9{
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+.txt-10{
+   color:  hsl(14, 45%, 36%);
+   font-weight: 700;
+   margin-left: 263px;
+}
+.first-line{
+  padding: 8px;
+}
+.txt-11{
+  color:  hsl(14, 45%, 36%);
+  font-weight: 700;
+  margin-left: 277px;
+}
+.txt-12{
+  color:  hsl(14, 45%, 36%);
+  font-weight: 700;
+  margin-left: 268px;
+}
+.txt-13{
+  color:  hsl(14, 45%, 36%);
+  font-weight: 700;
+  margin-left: 296px;
+}
+/*Code for nutrition div*/
